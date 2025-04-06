@@ -13,17 +13,45 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "lint:fix": "eslint . --ext ts,tsx,js,jsx --fix"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mdx-js/mdx": "^3.1.0",
+    "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.14.1",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-mdx": "^5.14.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-sitemap": "^6.14.0",
+    "gatsby-remark-copy-linked-files": "^6.14.0",
+    "gatsby-remark-images": "^7.14.0",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^3.0.2",
+    "twin.macro": "^3.4.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-react-app": "^7.0.1",
+    "gatsby-plugin-postcss": "^6.14.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.3.3"
   }
 }
