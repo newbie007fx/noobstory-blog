@@ -1,0 +1,9 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+# Redirects/headers (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
