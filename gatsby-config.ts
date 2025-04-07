@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
+const adapter = require("gatsby-adapter-netlify").default;
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -62,6 +63,10 @@ const config: GatsbyConfig = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap', 
   ],
+  adapter: adapter({
+    excludeDatastoreFromEngineFunction: false,
+    imageCDN: false,
+  }),
 };
 
 export default config;
