@@ -55,8 +55,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://<your-domain>',
-        sitemap: 'https://<your-domain>/sitemap-index.xml',
+        host: 'https://noobstory.my.id',
+        sitemap: 'https://noobstory.my.id/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       }
     },
