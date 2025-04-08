@@ -18,7 +18,7 @@ export const PageLayout: React.FC<React.PropsWithChildren<PageLayoutProps>> = ({
       <PageHeader />
       {image && (
         <div className="relative mb-12 flex h-96 items-center justify-center">
-          <GatsbyImage image={image} alt="" className="absolute inset-0" />
+          <GatsbyImage image={image} alt=""  className="absolute inset-0" style={{position: 'absolute'}} />
           {title && (
             <div className="z-20 mx-auto max-w-5xl">
               <h1 className="text-4xl font-bold text-white sm:text-5xl">
