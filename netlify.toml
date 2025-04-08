@@ -2,6 +2,9 @@
   command = "gatsby build"
   publish = "public"
 
+[build.environment]
+NETLIFY_IMAGE_CDN = "true"
+
 # Redirects/headers (optional)
 [[redirects]]
   from = "/*"
